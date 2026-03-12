@@ -1,3 +1,7 @@
+# DIAGRAMAÇÃO
+
+---
+# CASOS DE USO
 ## UC01 — Realizar Login (UC EXEMPLO - FAZER DESSA FORMA PARA TODOS OS CASOS DE USO, NESSE MESMO DOCUMENTO)
 
 ### Ator Principal
@@ -32,3 +36,4 @@ Permitir que o usuário acesse o sistema.
 
 ### RN Relacionadas
 - (inserir RN aqui)
+---

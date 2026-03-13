@@ -1,3 +1,121 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam linetype ortho
+skinparam shadowing false
+
+actor Aluno
+actor Recepcionista
+actor Instrutor
+actor Gerente
+actor "Sistema de Catraca" as Catraca
+
+rectangle "Sistema de Gestão de Academia" {
+
+package "Cadastro" #LightBlue {
+(Cadastrar Aluno)
+(Atualizar Dados do Aluno)
+}
+
+package "Matrícula" #LightGreen {
+(Realizar Matrícula)
+(Selecionar Plano)
+}
+
+package "Financeiro" #LightYellow {
+(Registrar Pagamento)
+(Consultar Histórico de Pagamentos)
+}
+
+package "Controle de Acesso" #LightPink {
+(Validar Acesso na Catraca)
+(Bloquear Acesso por Inadimplência)
+}
+
+package "Aulas" #LightCyan {
+(Consultar Agenda de Aulas)
+(Agendar Aula)
+(Cancelar Agendamento de Aula)
+(Registrar Presença em Aula)
+}
+
+package "Avaliação Física" #MistyRose {
+(Registrar Avaliação Física)
+(Consultar Histórico de Avaliações)
+}
+
+package "Administração" #Lavender {
+(Cadastrar Instrutor)
+(Atualizar Instrutor)
+(Criar Plano de Academia)
+(Atualizar Plano)
+(Gerar Relatório de Alunos)
+(Gerar Relatório Financeiro)
+}
+
+}
+
+'========================
+' RELAÇÕES COM CORES
+'========================
+
+' ALUNO
+Aluno -[#blue]-> (Consultar Agenda de Aulas)
+Aluno -[#blue]-> (Agendar Aula)
+Aluno -[#blue]-> (Cancelar Agendamento de Aula)
+Aluno -[#blue]-> (Consultar Histórico de Pagamentos)
+Aluno -[#blue]-> (Consultar Histórico de Avaliações)
+Aluno -[#blue]-> (Validar Acesso na Catraca)
+
+' RECEPCIONISTA
+Recepcionista -[#green]-> (Cadastrar Aluno)
+Recepcionista -[#green]-> (Atualizar Dados do Aluno)
+Recepcionista -[#green]-> (Realizar Matrícula)
+Recepcionista -[#green]-> (Registrar Pagamento)
+Recepcionista -[#green]-> (Consultar Histórico de Pagamentos)
+
+' INSTRUTOR
+Instrutor -[#orange]-> (Registrar Presença em Aula)
+Instrutor -[#orange]-> (Registrar Avaliação Física)
+
+' GERENTE
+Gerente -[#red]-> (Cadastrar Instrutor)
+Gerente -[#red]-> (Atualizar Instrutor)
+Gerente -[#red]-> (Criar Plano de Academia)
+Gerente -[#red]-> (Atualizar Plano)
+Gerente -[#red]-> (Gerar Relatório de Alunos)
+Gerente -[#red]-> (Gerar Relatório Financeiro)
+
+' CATRACA
+Catraca -[#purple]-> (Validar Acesso na Catraca)
+
+'========================
+' RELAÇÕES ENTRE CASOS
+'========================
+
+(Realizar Matrícula) -[#gray]-> (Selecionar Plano)
+(Agendar Aula) -[#gray]-> (Consultar Agenda de Aulas)
+(Cancelar Agendamento de Aula) -[#gray]-> (Consultar Agenda de Aulas)
+
+@enduml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
 ## UC01 — Realizar Login (UC EXEMPLO - FAZER DESSA FORMA PARA TODOS OS CASOS DE USO, NESSE MESMO DOCUMENTO)
 
 ### Ator Principal

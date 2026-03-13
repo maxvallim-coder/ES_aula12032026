@@ -677,4 +677,4 @@ Permitir que o usuário saia do sistema com segurança.
 - RNF20 — Sistema deve encerrar sessão em até 2 segundos
 
 ### RN Relacionadas
-- RN20 — Sessão encerrada não permite mais acesso até novo login    
+- RN20 — Sessão encerrada não permite mais acesso até novo login    itor

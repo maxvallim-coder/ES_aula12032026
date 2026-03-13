@@ -1,6 +1,6 @@
 # DIAGRAMAÇÃO
 <figure> <img width="645" height="389" alt="DIAGRAMA_RECEPCIONISTA" src="https://github.com/user-attachments/assets/41ab3fb8-0c49-4b2e-85c2-8e877aa3de0e" />
-<figcaption>  figcaption="__**Diagrama Recepcionista**__ </figcaption>
+<figcaption> <b> Diagrama Recepcionista </b> </figcaption>
 </figure>
 " />
 

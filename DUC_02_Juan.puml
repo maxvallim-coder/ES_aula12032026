@@ -1,0 +1,4 @@
+@startuml
+actor Recepcionista
+Recepcionista --> (Realizar Matrícula de Aluno)
+@enduml
